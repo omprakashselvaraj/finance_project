@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>new</title>
+    </head>
+    <body>
+        <div class="content" align="center">
+            <div class="topbar">
+                <h2>Welcome!! You are in Display Page!! </h2>                        
+            </div>  </br>
+            <div class="contentbar">
+                <h1>Your Details</h1>    </br>
+                 {% block content %}
+                    <div class="border">
+                        <table class="worddark"></br></br></br></br>
+                            <tr>
+                                <td>Username:</td>
+                                <td>{{ account[0] }}</td>
+                            </tr>
+                            <tr>
+                                <td>Passworde:</td>
+                                <td>{{ account[4] }}</td>
+                            </tr>
+                            <tr>
+                                <td>Email ID:</td>
+                                <td>{{ account[2] }}</td>
+                            </tr>  
+                            <tr>
+                                <td>Mobile Number:</td>
+                                <td>{{ account[1] }}</td>
+                            </tr>
+                            <tr>
+                                <td>Date of birth:</td>
+                                <td>{{ account[3] }}</td>
+                            </tr>                       
+                        </table>
+                    </div>
+                {% endblock %}                                           
+            </div>
+    </body>
+</html>
