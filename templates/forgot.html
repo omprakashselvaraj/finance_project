@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Forgot Password</title>
+    </head>
+    <body>
+        <h1 align="center">ENTER DETAILS</h1>
+        <center>
+        <form method="POST" action="http://127.0.0.1:5000/forgot">
+            <div class="msg">{{ msg }}</div>
+            <label for="username">USER ID</label>
+            <input name="username" id="username" type="text" placeholder="enter userid" class="textbox"/><br><br>
+            <label for="mobile">MOBILE NUMBER</label>
+            <input name="mobile" id="mobile" type="text" placeholder="enter mobile number" class="textbox"/><br><br>
+            <label for="password">NEW PASSWORD</label>
+            <input name="password" id="password" type="password" placeholder="enter password" class="textbox"/><br><br>
+            <input type = "submit" value="SUBMIT">
+    
+        </form>
+        </center>
+    </body>
+</html>
